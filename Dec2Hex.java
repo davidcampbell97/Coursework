@@ -33,6 +33,18 @@ class Dec2Hex
                 String hexadecimal="";
                 System.out.println("Converting the Decimal Value " + num + " to Hex...");
 
+	        if(num == 0){
+                    System.out.println("Hexadecimal representation is 0: ");
+                    return Arg1;
+                }
+
+                if (num < 0) {
+                    num = Math.abs(num);
+
+
+                }
+
+
                 while(num != 0)
                 {
                     rem=num%16;
