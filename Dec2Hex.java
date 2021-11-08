@@ -22,7 +22,7 @@ class Dec2Hex
         }
 
         System.out.println("Hexadecimal representation is: " + hexadecimal);
-	System.out.println("Detect me!");
+	System.out.println("Hello!");
 
     }
 }
