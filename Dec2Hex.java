@@ -5,11 +5,19 @@ class Dec2Hex
 
     public static int Arg1;
 
-    public static void main(String args[])
-    {
-	calculateHex(args[0]);
-    }
+ public static void main(String args[])
+        {
 
+
+            if(args.length == 0){
+                System.out.println("No Input. Please enter an integer you wish to convert.");
+                return;
+            }
+            else{
+                calculateHex(args[0]);
+            }
+
+        }
 
 
 
