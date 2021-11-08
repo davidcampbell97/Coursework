@@ -25,7 +25,7 @@ class Dec2Hex
 
   public static String calculateHex(String Arg1)
             {
-
+		 boolean negative = false;
                 char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
                 int rem, num;
                 num = Integer.parseInt(Arg1);
@@ -40,6 +40,7 @@ class Dec2Hex
 
                 if (num < 0) {
                     num = Math.abs(num);
+	            negative = true;
 
 
                 }
@@ -51,6 +52,11 @@ class Dec2Hex
                     hexadecimal= ch[rem] + hexadecimal;
                     num= num/16;
                 }
+		
+		if(negative){
+                    System.out.println("Hexadecimal representation is : -" + hexadecimal);
+                    return hexadecimal;
+                }	
 
                 System.out.println("Hexadecimal representation is: " + hexadecimal);
                 return hexadecimal;
