@@ -1,5 +1,4 @@
 package Java;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,6 +19,14 @@ public class Dec2HexTest {
     //should test positive integer input
     public void testPositiveNumber() {
         assertEquals("Should return D4", dec2Hex.calculateHex("212"),"D4");
+    }
+    @Test
+    public void testPositiveNumber2() {
+        assertEquals("Should return 1", dec2Hex.calculateHex("1"),"1");
+    }
+    @Test
+    public void testPositiveNumber3() {
+        assertEquals("Should return 1602", dec2Hex.calculateHex("5634"),"1602");
     }
 
 
@@ -43,7 +50,12 @@ public class Dec2HexTest {
 
     @Test
     public void testZero(){
-        assertEquals("0", dec2Hex.calculateHex("0"));
+        assertEquals("Should return 0", "0", dec2Hex.calculateHex("0"));
     }
+    //@Test
+  //  public void testText(){
+      // assertEquals("Should return 0", "", dec2Hex.calculateHex("Hello World"));
+//
+   // }
 
 }
