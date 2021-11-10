@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<project>
+    <target name = "junitTests" description = "Running my junit tests">
+        <junit printsummary ="yes" dir ="./" fork = "true">
+            <classpath location = "../../coursework/junit4-4.12.jar"/>
+            <classpath location = "../../coursework/hamcrest-core-1.3.jar"/>
+            <classpath location = "./"/>
+            <test name = "Dec2HexTest" haltonfailure = "no" outfile = "reports/result">
+                <formatter type = "xml"/>
+            </test>
+        </junit>
+    </target>
+
+</project>
