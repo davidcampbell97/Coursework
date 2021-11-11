@@ -63,9 +63,9 @@ public class Dec2Hex {
                 return negHex;
             }
 
-
+	    System.out.println("Hi Mark!");
             System.out.println("Hexadecimal representation is: " + hexadecimal);
             return hexadecimal;
-        }	System.out.println("Hi Mark!");
+        }	
 
     }
