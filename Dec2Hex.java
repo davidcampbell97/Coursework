@@ -66,6 +66,6 @@ public class Dec2Hex {
 
             System.out.println("Hexadecimal representation is: " + hexadecimal);
             return hexadecimal;
-        }
+        }	System.out.println("Hi Mark!");
 
     }
