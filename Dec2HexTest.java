@@ -9,7 +9,7 @@ public class Dec2HexTest {
     private Dec2Hex dec2Hex;
 
     @Before
-    public void setUp() throws Exception {
+     void setUp() throws Exception {
         dec2Hex = new Dec2Hex();
         Dec2Hex dec2Hex = new Dec2Hex();
     }
